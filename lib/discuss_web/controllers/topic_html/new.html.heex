@@ -1,2 +1,7 @@
 
   <h2>Hi</h2>
+
+  <.form :let={f} for={@changeset} action={Routes.topic_path(:create, @topics)}>
+    <.input field={f[:title]} />
+    <button type="submit">Submit</button>
+  </.form>
